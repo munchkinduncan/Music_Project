@@ -93,7 +93,7 @@ fun main() {
             artistGuess = readLine().toString()
             println("Enter your guess for the song: ")
             songGuess = readLine().toString()
-            if (artistGuess == artists[randomnumber] && songGuess == songs[randomnumber]) {
+            if (artistGuess.toLowerCase() == artists[randomnumber].toLowerCase() && songGuess.toLowerCase() == songs[randomnumber].toLowerCase()) { {
                 score += 3
                 println("You scored 3 points")
             }
@@ -103,7 +103,7 @@ fun main() {
                 artistGuess = readLine().toString()
                 println("Enter your guess for the song: ")
                 songGuess = readLine().toString()
-                if (artistGuess == artists[randomnumber] && songGuess == songs[randomnumber]) {
+                if (artistGuess.toLowerCase() == artists[randomnumber].toLowerCase() && songGuess.toLowerCase() == songs[randomnumber].toLowerCase()) {
                     score += 1
                     println("You scored 1 point")
                 }
